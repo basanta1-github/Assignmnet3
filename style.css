@@ -1,0 +1,842 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+html,
+body,
+header,
+main,
+footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #541E1B;
+    margin-top: -20px;
+    padding: 0;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.navigation,
+.navigation2 {
+    text-align: center;
+}
+
+.navigation2 nav ul  a,
+.navigation nav ul a {
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.navigation {
+    position: relative;
+    top: 120px;
+    right: 40px;
+}
+
+.navigation2 {
+    float: right;
+    margin-right: 50px;
+    margin-top: -40px;
+}
+
+.navigation2 nav ul button {
+    font-size: 30px;
+    background-color: #541E1B;
+    color: white;
+    border: none;
+    margin-left: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    padding-right: 10px;
+}
+
+.logo {
+    padding: 20px;
+    margin-left: 100px;
+}
+
+main .top img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2025px;
+    height: 750px;
+    margin-left: -8px;
+    padding: 0;
+
+}
+
+.top-header .items {
+    position: relative;
+    bottom: 650px;
+    color: white;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 100px;
+}
+
+.items h1 {
+    font-size: 50px;
+}
+
+.items p {
+    font-size: 100px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+}
+
+.items button {
+    font-size: 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: darkblue;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px 70px 20px 70px;
+}
+
+.items button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: darkblue;
+    transition: 1s;
+}
+
+.section-1 {
+    background-color: red;
+    height: 750px;
+    width: 2025px;
+    position: relative;
+    bottom: 466px;
+    margin-left: -8px;
+}
+
+.section-1 .image img {
+    height: 250px;
+    width: 800px;
+    margin-top: 250px;
+    display: inline-block;
+    position: absolute;
+    right: 1100px;
+    animation: slideAnimation 5s ease-in-out infinite;
+    transition: 2s;
+}
+
+@keyframes slideAnimation {
+
+    0%,
+    100% {
+        top: 0;
+    }
+
+    50% {
+        top: 80px;
+    }
+}
+
+.section-1 h1 {
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    float: right;
+    position: absolute;
+    left: 1100px;
+    top: 100px;
+
+}
+
+.section-1 p {
+    color: white;
+    font-size: 100px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 50%;
+    float: right;
+    position: absolute;
+    left: 1100px;
+    bottom: 150px;
+}
+
+.section-1 button {
+    width: auto;
+    height: auto;
+    background-color: darkblue;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 50px 10px 50px;
+    /* align-items: center; */
+    position: relative;
+    left: 1100px;
+    top: 525px;
+}
+
+.section-1 button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: darkblue;
+    transition: 1s;
+}
+
+.section-2 .header h1 {
+    color: #541E1B;
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.section-2 .header hr {
+    border: none;
+    height: 20px;
+    background-color: red;
+    margin: 20px 0;
+    width: 150px;
+    position: relative;
+    left: 925px;
+    top: -30px;
+}
+
+.section-2 .header {
+    margin-top: -500px;
+}
+
+.facts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.facts-1,
+.facts-2,
+.facts-3,
+.facts-4,
+.facts-5,
+.facts-6 {
+    flex: 0 0 calc(25% - 20px);
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    margin: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    transition: transform 0.5s ease;
+}
+
+.facts-1:hover,
+.facts-2:hover,
+.facts-3:hover,
+.facts-4:hover,
+.facts-5:hover,
+.facts-6:hover {
+    cursor: pointer;
+    /* background-color: white; */
+    /* color: darkblue; */
+    transform: translateY(-20px);
+}
+
+.fact-box {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    transition: background-color 0.5s ease-out, color 1s ease-out;
+    height: auto;
+    width: auto;
+}
+
+.fact-box:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+.fact-box h1 {
+    margin: 0;
+}
+
+.fact-box p {
+    display: none;
+}
+
+.fact-box:hover p {
+    display: block;
+}
+
+.fact-box:hover h1 {
+    color: #541E1B;
+}
+
+.facts-1 h1,
+.facts-2 h1,
+.facts-3 h1,
+.facts-4 h1,
+.facts-5 h1,
+.facts-6 h1 {
+    color: white;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.facts-1 p,
+.facts-2 p,
+.facts-3 p,
+.facts-4 p,
+.facts-5 p,
+.facts-6 p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.section-4 .image img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 2025px;
+    margin-left: -8px;
+}
+
+.neutrients {
+    width: 75%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    margin: auto;
+    justify-content: center;
+    position: absolute;
+    top: 2600px;
+    background-color: white;
+    right: 300px;
+    display: block;
+}
+
+.neutrients h1 {
+    color: #541E1B;
+    font-size: 80px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.neutrients p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    padding: 60px;
+}
+
+.section-4 {
+    padding: 100px 0 100px 0;
+}
+
+.section-5 h1 {
+    color: #541E1B;
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.section-5 {
+    padding: 100px 50px 100px 50px;
+}
+
+.section-5 hr {
+    border: none;
+    height: 20px;
+    background-color: red;
+    margin: 20px 0;
+    width: 150px;
+    position: relative;
+    left: 875px;
+    bottom: 30px;
+}
+
+.section-5 .video iframe {
+    height: 700px;
+    width: 75%;
+    position: relative;
+    left: 10%;
+}
+
+.section-6 h1 {
+    color: #541E1B;
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.section-6 hr {
+    border: none;
+    height: 20px;
+    background-color: red;
+    margin: 20px 0;
+    width: 300px;
+    position: relative;
+    left: 850px;
+    bottom: 30px;
+}
+
+.section-6 .one img,
+.section-6 .two img,
+.section-6 .three img,
+.section-6 .four img,
+.section-6 .five img,
+.section-6 .six img {
+    height: 500px;
+    width: 800px;
+    padding: 0px;
+
+}
+
+.section-6 .one img {
+    float: right;
+    display: inline;
+    margin-top: 100px;
+}
+
+.section-6 .three img {
+    float: right;
+    position: relative;
+    top: 150px;
+
+}
+
+.section-6 .five img {
+    float: right;
+    position: relative;
+    top: 200px;
+}
+
+.section-6 .two img {
+    position: relative;
+    top: 400px;
+}
+
+.section-6 .four img {
+    position: relative;
+    top: 500px;
+}
+
+.section-6 .six img {
+    position: relative;
+    top: 500px;
+}
+
+.section-6 .boxes h2 {
+    color: darkblue;
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.section-6 .boxes p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+
+}
+
+.section-6 .one h2 {
+    position: relative;
+    top: 100px;
+    right: 350px;
+}
+
+.section-6 .one p {
+    width: 40%;
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+
+.section-6 .two h2 {
+    position: relative;
+    bottom: 200px;
+}
+
+.section-6 .two p {
+    width: 40%;
+    position: relative;
+    bottom: 200px;
+    left: 900px;
+}
+
+
+.section-6 .three h2 {
+    position: relative;
+    top: 200px;
+    right: 400px;
+}
+
+.section-6 .three p {
+    width: 40%;
+    position: relative;
+    top: 200px;
+    left: 150px;
+}
+
+.section-6 .four h2 {
+    position: relative;
+    bottom: 50px;
+    /* left: 800px; */
+}
+
+.section-6 .four p {
+    width: 30%;
+    position: relative;
+    bottom: 100px;
+    left: 950px;
+}
+
+.section-6 .five h2 {
+    position: relative;
+    top: 200px;
+    right: 400px;
+}
+
+.section-6 .five p {
+    width: 30%;
+    position: relative;
+    top: 200px;
+    left: 150px;
+}
+
+.section-6 .six h2 {
+    position: relative;
+    bottom: 50px;
+    left: 200px;
+}
+
+.section-6 .six p {
+    width: 30%;
+    position: relative;
+    bottom: 100px;
+    left: 1000px;
+}
+
+.contact {
+    background-color: #541E1B;
+    height: 750px;
+    width: 2025px;
+    margin-left: -8px;
+    position: relative;
+    top: 250px;
+}
+
+.contact h1 {
+    color: #541E1B;
+    font-size: 80px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 2025px;
+    padding: 20px 0px 20px 0px;
+    background-color: yellow;
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+}
+
+
+.contact img {
+    height: 300px;
+    width: 300px;
+    float: right;
+    position: relative;
+    bottom: 270px;
+}
+
+.links ul a {
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.links {
+    margin-top: 100px;
+}
+
+.links h2 {
+    color: white;
+    font-size: 60px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 50%;
+    position: absolute;
+    left: 90px;
+}
+
+.links button {
+    width: auto;
+    height: auto;
+    background-color: darkblue;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 50px 10px 50px;
+    align-items: center;
+    position: relative;
+    left: 400px;
+    top: 225px;
+}
+
+.links button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: darkblue;
+    transition: 1s;
+}
+
+form {
+    margin-top: 0px;
+    float: right;
+    margin-right: 0px;
+}
+
+label {
+    font-size: 30px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input {
+    height: 40px;
+    width: 400px;
+    border: none;
+    display: block;
+    border-radius: 8px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    width: auto;
+    height: auto;
+    background-color: darkblue;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 50px 10px 50px;
+    position: relative;
+    left: 75px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: white;
+    color: darkblue;
+    transition: 1s;
+}
+
+textarea {
+    border: none;
+    height: 40px;
+    width: 300px;
+    position: relative;
+    right: -30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 400; */
+    font-style: normal;
+    border-radius: 8px;
+    resize: none;
+}
+
+footer {
+    position: relative;
+    bottom: 50px;
+    /* color: white; */
+    text-align: center;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer p {
+    position: absolute;
+    /* top: 100px; */
+    right: 600px;
+    top: 150px;
+    font-size: 50px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    html,
+    body,
+    header,
+    main,
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        overflow-x: hidden;
+    }
+    *{
+        max-width: 100vw;
+
+    }
+    
+    img,
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+   
+    .hidden {
+        display: none;
+    }
+
+
+    .navigation,
+    .navigation2 {
+        display: none;
+    }
+
+    .header {
+        background-color: #541E1B;
+        width: auto;
+    }
+
+    .logo img {
+        height: 100px;
+        width: auto;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .top-header .items {
+        width: auto;
+        margin: auto;
+        height: auto;
+    }
+
+    .top-header .items {
+        width: auto;
+        margin: auto;
+        height: auto;
+    }
+    .top-header .items H1{
+        font-size: 40px;
+    }
+    .top-header .items p{
+        font-size: 40px;
+        width: 40%;
+        margin-left: 30px;
+    }
+    .top-header .items button {
+        width: auto;
+        margin: auto;
+        height: auto;
+        position: relative;
+        left: 80px;
+    }
+    .section-1 .image img{
+        height: 100px;
+        width: 400px;
+        position: absolute;
+        left: 70px;
+        top: 0px;
+        margin-top: 10px;
+    }
+    .section-1 h1{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .section-4 .neutrients{
+        position: absolute;
+        top: 3300PX;
+        width: auto;
+        height: 500px;
+        width: 80%;
+        background-color: white;
+        
+    }
+    .section-4 .neutrients p{
+        position: absolute;
+        left: 100px;
+        top: 80px;
+        font-size: 20px;
+        width: 60%;
+        height: 50%;
+    }
+    .fact-box,
+    .boxes div {
+        flex: 0 0 calc(50% - 40px);
+    }
+}
